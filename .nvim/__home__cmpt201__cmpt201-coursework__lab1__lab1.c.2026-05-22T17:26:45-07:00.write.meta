@@ -1,7 +1,0 @@
-trigger:write
-undo_seq:1
-source_path:/home/cmpt201/cmpt201-coursework/lab1/lab1.c
-cursor:5,1
-lines:5
-changedtick:75
-reg_size:21
