@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char *history[5];
+void add_history(char *line) {
+  free(history[0]);
+  for( int i = 0; i < 4; i++) {
+    history[i] = history[i+1];
+  }
+  history[4] = line;
+}
+
+void print_history(void) {
+  for (int i = 0; i < 5; i++) {
+    if (history[i] != NULL)
+      printf ("%s", history[i]);
+  }
+}
+
+int main() {
+  char *element = NULL;
+
+  while (1) {
+    printf ("Enter inpunt: ");
+    getline(&element, 4096, stdin);
+  }
+
+

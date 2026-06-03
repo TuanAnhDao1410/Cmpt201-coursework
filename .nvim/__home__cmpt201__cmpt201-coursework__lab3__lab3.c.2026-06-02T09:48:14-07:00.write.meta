@@ -1,0 +1,7 @@
+trigger:write
+undo_seq:1
+source_path:/home/cmpt201/cmpt201-coursework/lab3/lab3.c
+cursor:6,1
+lines:6
+changedtick:158
+reg_size:21
